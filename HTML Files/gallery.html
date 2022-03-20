@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../CSS%20Files/sty.css">
+</head>
+<body>
+<div class="topic">
+  <a href="homepage.html">
+    <img src="../Images/logo.jpg" alt="icon" style="float:left;" height="100" width="160">
+  </a>
+    <h1>MY CRICKET STORE 360<sup>o</sup></h1> <!--Heading of the web page-->
+  </div>
+<h2></h2>
+<p></p>
+<div class="menu-bar"> 
+    <ul>       
+      <li><a href="homepage.html">Home</a></li>
+      
+      <li>   
+        <a href="productspage.html">Products</a>
+
+       
+      </li>   
+           
+      <li><a href="https://www.espncricinfo.com/">News</a></li>        <!--list item for the list in the main menu bar -->
+      
+      <li><a href="Quiz.html">Attempt Quiz</a></li>
+
+      <li><a href="gallery.html">Gallery</a></li>     <!--list item for the list in the main menu bar -->
+    
+      <li><a href="#">Cart</a></li> 
+
+    <li>
+        <a href="AuthorPage.html">About Us</a>          <!--Creating main menu item for About Us -->
+        <div class="submenu1">
+          <ul>                <!--start of the list containing items under the main menu item about us-->
+  
+            <li><a href="SVG.html">SVG</a></li>  
+            <li><a href="AuthorPage.html">Authors</a></li>    <!--Sub menu items for the main menu item About us -->
+            <li><a href=Query.html>Contact</a></li>        
+          </ul>       <!--end of the list containing items in the main menu item about us-->
+        </div>
+      </li>
+             <!--list item for the list in the main menu bar -->
+    </ul>               <!--end of the list containing items in the main menu bar-->
+
+  </div>
+<div class="row">
+  <div class="column1">
+    <div class="card">
+    <div class="imgs"><a onclick="view('../Images/Gallery/01.jpeg')"><img class="image" src="../Images/Gallery/01.jpeg"></a></div>
+    <div class="imgs"><a onclick="view('../Images/Gallery/02.jpeg')"><img class="image" src="../Images/Gallery/02.jpeg"></a></div>
+    <div class="imgs"><a onclick="view('../Images/Gallery/03.jpeg')"><img class="image" src="../Images/Gallery/03.jpeg"></a></div> 
+    <div class="imgs"><a onclick="view('../Images/Gallery/04.jpeg')"><img class="image" src="../Images/Gallery/04.jpeg"></a></div> 
+    <div class="imgs"><a onclick="view('../Images/Gallery/05.jpeg')"><img class="image" src="../Images/Gallery/05.jpeg"></a></div> 
+    <div class="imgs"><a onclick="view('../Images/Gallery/06.jpeg')"><img class="image" src="../Images/Gallery/06.jpeg"></a></div> 
+    <div class="imgs"><a onclick="view('../Images/Gallery/07.jpeg')"><img class="image" src="../Images/Gallery/07.jpeg"></a></div> 
+    <div class="imgs"><a onclick="view('../Images/Gallery/08.jpeg')"><img class="image" src="../Images/Gallery/08.jpeg"></a></div>
+    <div class="imgs"><a onclick="view('../Images/Gallery/09.jpeg')"><img class="image" src="../Images/Gallery/09.jpeg"></a></div>
+    <div class="imgs"><a onclick="view('../Images/Gallery/010.jpeg')"><img class="image" src="../Images/Gallery/010.jpeg"></a></div>
+    <div class="imgs"><a onclick="view('../Images/Gallery/011.jpeg')"><img class="image" src="../Images/Gallery/011.jpeg"></a></div> 
+    <div class="imgs"><a onclick="view('../Images/Gallery/012.jpeg')"><img class="image" src="../Images/Gallery/012.jpeg"></a></div>  
+    </div>
+  </div>
+  <div class="column2">
+    <div class="card">
+<img class="imageviv" id="viv" src="../Images/Gallery/01.jpeg" style="width: 650px; height: 650px;">
+    </div>
+  </div>
+  <br><br>
+  <div class="footer1">
+    <p class="footer1-text"><b>Last upadted:</b>20/07/2021
+    <br>
+    Page Editor:<a href=personal2.html>Venura Palihawadana</a>
+    <br>
+    Copyright &copy; All rights reserved</p>
+    <br>
+  </div>
+<script>
+  function view(src){
+    var full = document.getElementById("viv");
+    full.src=src;
+  }
+</script>
+</body>
+</html>

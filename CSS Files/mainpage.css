@@ -1,0 +1,213 @@
+    	/*CSS styling for the main page*/
+
+    	html{							/*making the back to top scroll smooth*/
+    		scroll-behavior: smooth;  
+    	}
+
+    	body{
+			box-sizing:border-box;     /*styling the body tag for proper display and space handling in the page*/
+			padding:0;
+			margin:0;
+			background-image:url("../Images/MainPage/back.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		.menu-bar{							/*the navigation bar styling*/
+			font-family:Arial Black;
+			font-size:15px;
+			background:#ffa500;
+			text-align:center;
+			padding:-5px;
+		}
+
+		.menu-bar ul{					   	/*styling the items of the menu bar*/
+			display:inline-flex;
+			list-style:none;
+			padding:5px;
+			margin-left:-5px;
+		}
+
+		.menu-bar ul li{				  	/*styling the sub menu items of the navigation bar items*/
+			width:180px;
+			margin:0px;
+			padding:15px;
+		}
+
+		.menu-bar ul li a{    			 	/*hover effect styling for the navigation bar*/
+			text-decoration:none;
+			color:#000000;
+			padding:7px;
+			}
+			
+		.menu-bar ul li:hover{     		 	/*the mouse on display styling of navigation bar*/
+			background:#ffd700;
+			border-radius:3px;
+		}
+
+		.submenu1{         					/*removing the bullet marks of the submenu list*/
+			display:none;
+		}
+		
+		.menu-bar ul li:hover .submenu1{    /*styling the hover effect of the menu items*/
+			display:block;
+			position:absolute;
+			background:#ffa500;
+			margin-top:15px;
+			margin-left:-15px;
+		}
+
+		.menu-bar ul li:hover .submenu1 ul{  /* on-mouse hover effect stylig for the submenu items*/
+			display:block;
+			margin:5px;
+		}
+		 
+		.slider{
+			position:relative;       		/*styling the images of the image dlide show and animation time speed*/
+			width:500px;
+			height:500px;
+			background:url(../Images/MainPage/1.jpeg);
+			margin:25px auto;
+			animation:slide 20s infinite;
+			right: 510px;
+		}
+		
+		@keyframes slide{                  /*declaring the oreder of image displaying*/
+			20%{
+			background:url(../Images/MainPage/1.jpeg);
+			}
+			40%{
+			background:url(../Images/MainPage/2.jpeg);
+			}
+			60%{
+			background:url(../Images/MainPage/3.jpeg);
+			}
+			80%{
+			background:url(../Images/MainPage/4.jpeg);
+			}
+			100%{
+			background:url(../Images/MainPage/5.jpeg);
+			}
+	   }
+
+	       .topic{						  /*styling the backgrond area taht contains the topic of the page*/
+		   	position: relative;
+		   	height: 88px;
+	    }
+	
+		h1{
+			font-family:Georgia;       	  /*styling the main heading of the page*/
+			text-align:center;
+			margin: 0px;
+			background-color:#000000;
+			color:#ffa500;
+			padding:30px;
+			font-size: 40px;
+			letter-spacing: 2px;
+			width: 96%;
+			height: 40px;
+		}
+		
+		.text{                            /*styling the body area text of the page*/
+			width:600px;
+			position:absolute;
+			top:350px;
+			right:280px;
+			color:#e3f9a6;  
+			font-size:20px;
+			font-family:Arial Black;
+			padding: 20px;
+		}
+
+		.inner-container{                 /*adding the hover effect for the body text*/
+			width: 1020px;
+			height: 300px;
+			background: linear-gradient(155deg, rgba(192,192,192,0.5) 0%,rgba(0,0,0,0.5) 25%,
+			rgba(255, 165, 0,0.5) 50%, rgba(192,192,192,0.2) 75%,rgba(255, 165, 0,0.5) 100%);		
+			position: absolute;
+			top: 370px;
+			left: 500px;
+			background-repeat: no-repeat;
+			background-size: 400% 400%;
+			transition: 5s ;
+		}
+
+		.container:hover .inner-container{       /*declaring the background position that hover effect should apply */ 
+			background-position: 100% 100%;
+		}
+
+/*footer1 is the area that contains the author details*/
+		.footer1{                               
+			background-color: #ffa500;
+			text-align: center;                 /*styling the footer area with author details*/
+			height: 90px;
+			margin: -16px;
+			margin-right: 0;
+			margin-bottom: 1px;
+		}
+
+		.footer1-text{                           /*footer text styling(spacing) in the above area*/
+			padding: 20px;
+		}
+/*footer is the area tha contains the contact details, social media links and address*/
+		.foot-container{                        
+			max-width: 100%;                    /* styling the container (background) of the footer*/
+			height: 30%;
+			background-color: #000000;
+			margin: auto;
+		}
+
+		.footer ul{                            /* styling the container content of the footer*/           
+			color: #ffa500;
+			list-style:none;
+			padding:30px;
+			float: center;
+			font-size: 17px;
+			
+		}
+
+		.footer ul li{                 		  /* styling the container content of the footer*/
+			color: #ffa500;     
+			margin-left: 130px;
+			padding: 2px;
+			font-size: 18px;
+		}
+
+		.footer{      				         /* spacing the container content of the footer*/
+			padding: -20px 0;
+			margin: 0px;
+		}
+
+		.row{                               /* aligning the content of the footer*/
+			display: flex;
+			color: #ffa500;;
+		}
+
+		.footer-col{        			   /*aligning the content of the footer*/    
+			width: 25%;
+			padding: 0 50px;
+		}
+
+		h2{                              /*aligning the content of the footer*/
+			text-align: center;
+		}
+
+		.back{                          /*styling the area with the link back to top*/
+			background-color: black;
+			padding: 10px;
+			font-size: 20px;
+		}
+
+       /*styling all the links accordinh to their state(back to top and link derected to author details file)*/
+		a:link {   
+		  color: blue;
+		}
+
+	    	a:visited {
+  		color:blue;
+		}
+
+		a:hover {
+  		color: #ffd700;
+		}
+

@@ -1,0 +1,54 @@
+<!---------Styling for Details page------->
+*{
+ margin:0;
+ padding:0;
+ font-family: 'Lato', sans-serif;
+ }
+ body{
+	 background-color:#808080;
+ }
+ <!--------styling for fieldset and legend------->
+fieldset{
+  margin: 2em 0;]
+  padding:1em 2em;
+  border:solid 1px #ccc;
+  border-radius:6px;
+  min-width:200px;
+}
+legend{
+	font-size:1.25em;
+	padding: 0 .25em;
+	color:#000;
+}
+<!--------labels------>
+label{
+	display:block;
+	margin-top:1em;
+}
+label:first-of-type{
+   margin-top:0;
+}
+<!------------Inputs and TextArea----------------->
+input{
+   padding: .5em;
+   border: solid 1px #999;
+}
+input[type="email"], input[type="text"]{
+	width:15em;
+	
+	
+}
+textarea{
+	min-height:8em;
+	min-width:20em;
+	padding: .5em;
+	border: solid 1px #999;
+}
+.info{
+	align:center;
+    width:35%;
+	margin-left:20px;
+	margin-top:28px;
+	padding-right:10px;
+}
+	

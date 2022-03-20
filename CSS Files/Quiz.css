@@ -1,0 +1,138 @@
+body {
+    background-image: linear-gradient(to right, #f1f1f1,#808080);
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 100px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    margin: 5px;
+}
+
+h2{
+    font-size: 50px;
+    color: white;
+    margin: 5px;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: "Georgia";
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffa500;
+    background-color: black;
+    padding: 30px;
+}
+
+.container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.menu-bar{
+    font-family:Arial Black;
+    font-size:15px;
+    background:#ffa500;
+    text-align:center;
+    padding:-5px;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    padding:5px;
+    margin-left:-5px;
+}
+
+.menu-bar ul li{
+    width:180px;
+    margin:0px;
+    padding:15px;
+}
+
+.menu-bar ul li a{
+    text-decoration:none;
+    color:#000000;
+    padding:7px;
+}
+
+.menu-bar ul li:hover{
+    background:#ffd700;
+    border-radius:3px;
+}
+
+.submenu1{
+    display:none;
+}
+
+.menu-bar ul li:hover .submenu1{
+    display:block;
+    position:absolute;
+    background:#ffa500;
+    margin-top:15px;
+    margin-left:-15px;
+}
+
+.menu-bar ul li:hover .submenu1 ul{
+    display:block;
+    margin:5px;
+}
+
+.menu-bar ul li a:hover{
+    color:#000000;
+}
+
+.btn{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color: white;
+    background: #000000;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: #e8491d;
+    transition: transform 150ms;
+    transform: scale(1.1);
+}
+
+footer{
+    position: center;
+    text-align: center;
+    padding: 3px;
+    background-color: #ffa500;
+    color: black;
+}

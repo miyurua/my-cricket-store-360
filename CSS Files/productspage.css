@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+.small-container{
+  max-width:1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row{
+   display:flex;
+   align-items:center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.categories{
+   margin:70px 0;
+}
+.column1{
+   flex-basis: 25%;
+   min-width: 250px;
+   margin-bottom:30px;
+}
+.checked {
+  color: orange;
+}
+.column1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.column1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+.column1 button:hover {
+  opacity: 0.7;
+}
+body{
+	background-image: linear-gradient(to right, #f1f1f1,#808080);
+}
+.small-container h2{
+	text-align: center;
+	text-decoration:underline orange;
+}
+.small-container h3{
+	text-align:center;
+}
+.menu-bar{
+			font-family:Arial Black;
+			font-size:15px;
+			background:#ffa500;
+			text-align:center;
+			padding:-5px;
+		}
+
+		.menu-bar ul{
+			display:inline-flex;
+			list-style:none;
+			padding:5px;
+			margin-left:-5px;
+		}
+
+		.menu-bar ul li{
+			width:180px;
+			margin:0px;
+			padding:15px;
+		}
+
+		.menu-bar ul li a{
+			text-decoration:none;
+			color:#000000;
+			padding:7px;
+			}
+			
+		.menu-bar ul li:hover{
+			background:#ffd700;
+			border-radius:3px;
+		}
+
+		.submenu1{
+			display:none;
+		}
+		
+		.menu-bar ul li:hover .submenu1{
+			display:block;
+			position:absolute;
+			background:#ffa500;
+			margin-top:15px;
+			margin-left:-15px;
+		}
+
+		.menu-bar ul li:hover .submenu1 ul{
+			display:block;
+			margin:5px;
+		}
+
+		.menu-bar ul li a:hover{
+			color:#000000;
+		}
+		h1{
+			text-align:center;
+			font-family:Georgia;
+			font-size:40px;
+			letter-spacing:2px;
+			background-color:#000000;
+			color:#ffa500;
+			padding:30px;
+			
+		}	
+	footer {
+      text-align: center;
+      padding: 3px;
+      background-color: #ffa500;
+      color:#000000;
+}	
+      
+ 
+  
+	

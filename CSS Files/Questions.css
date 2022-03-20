@@ -1,0 +1,138 @@
+body{
+    background-image: linear-gradient(to right, #f1f1f1,#808080);
+    height: 1080px;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: "Georgia";
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffa500;
+    background-color: black;
+    padding: 30px;
+
+}
+
+.test{
+    display: flex;
+    background: #2e86de;
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 3px;
+    text-decoration: none;
+    color: white;
+    background: #696969;
+    border-radius: 15px;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: #e8491d;
+    transition: transform 150ms;
+    transform: scale(1.05);
+    background: #000000;
+}
+
+.container{
+    align-items: center;
+    margin: 0 auto;
+    width: 200px;
+    text-align: left;
+}
+.buttonContainer{
+    font-size: 25px;
+    text-align: center;
+    }
+h2{
+    font-family: 'poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+h3{
+    font-family: 'poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Nav Bar Styles*/
+
+.menu-bar{
+    font-family:Arial Black;
+    font-size:15px;
+    background:#ffa500;
+    text-align:center;
+    padding:-5px;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    padding:5px;
+    margin-left:-5px;
+}
+
+.menu-bar ul li{
+    width:180px;
+    margin:0px;
+    padding:15px;
+}
+
+.menu-bar ul li a{
+    text-decoration:none;
+    color:#000000;
+    padding:7px;
+}
+
+.menu-bar ul li:hover{
+    background:#ffd700;
+    border-radius:3px;
+}
+
+.submenu1{
+    display:none;
+}
+
+.menu-bar ul li:hover .submenu1{
+    display:block;
+    position:absolute;
+    background:#ffa500;
+    margin-top:15px;
+    margin-left:-15px;
+}
+
+.menu-bar ul li:hover .submenu1 ul{
+    display:block;
+    margin:5px;
+}
+
+.menu-bar ul li a:hover{
+    color:#000000;
+}
+
+text{
+    align-items: center;
+    font-family: arial Black;
+    border: 5px solid #ffa500;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer{
+    position: center;
+    text-align: center;
+    padding: 3px;
+    background-color: #ffa500;
+    color: black;
+}

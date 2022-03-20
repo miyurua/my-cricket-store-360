@@ -1,0 +1,170 @@
+body{
+    background-image: linear-gradient(to right, #f1f1f1,#808080);
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    color: #fff;
+    display:inline;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: "Georgia";
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffa500;
+    background-color: black;
+    padding: 30px;
+
+}
+
+.logo{
+    float: left;
+    height: 100px;
+    width: 160px;
+}
+
+.menu-bar{
+    font-family:Arial Black;
+    font-size:15px;
+    background:#ffa500;
+    text-align:center;
+    padding:-5px;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    padding:5px;
+    margin-left:-5px;
+}
+
+.menu-bar ul li{
+    width:180px;
+    margin:0px;
+    padding:15px;
+}
+
+.menu-bar ul li a{
+    text-decoration:none;
+    color:#000000;
+    padding:7px;
+}
+
+.menu-bar ul li:hover{
+    background:#ffd700;
+    border-radius:3px;
+}
+
+.submenu1{
+    display:none;
+}
+
+.menu-bar ul li:hover .submenu1{
+    display:block;
+    position:absolute;
+    background:#ffa500;
+    margin-top:15px;
+    margin-left:-15px;
+}
+
+.menu-bar ul li:hover .submenu1 ul{
+    display:block;
+    margin:5px;
+}
+
+.menu-bar ul li a:hover{
+    color:#000000;
+}
+
+#textbox{
+    transition: box-shadow 0.4s;
+    color: #666;
+    padding: 5pt;
+    border-radius: 10pt;
+    width: 200pt;
+}
+
+#textbox:hover{
+    box-shadow: 0pt 0pt 1000pt #fff;
+}
+
+#content{
+    margin: 60pt;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: 737px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+}
+
+.row{
+    padding-top: 5%;
+}
+
+.container {
+    width: 100%;
+    position:relative;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 300ms;
+    background-color: #000000;
+}
+
+.container:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#foot{
+    position: center;
+    text-align: center;
+    padding: 3px;
+
+    color: black;
+}

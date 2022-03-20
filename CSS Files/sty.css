@@ -1,0 +1,140 @@
+body{
+  color:#0000000;
+}
+
+.imgs{
+  display: inline;
+  width: 20%;
+}
+.image{
+  width: 180px;
+  height:150px ;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {}
+
+/* Float four columns side by side */
+.column1 {
+  background-color:#000000;
+  float: left;
+  width: 45%;
+  padding: 12px 12px;
+  height:660px;
+}
+.column2 {
+  background-color:#ffa500;
+  float: left;
+  width: 55%;
+  padding: 0 10px;
+  height:660px;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  padding-right:6px ;
+  padding-left:6px ;
+  text-align: center;
+  background-color: #f7e7ce;
+}
+.menu-bar{
+      font-family:Arial Black;
+      font-size:15px;
+      background:#ffa500;
+      text-align:center;
+      padding:-5px;
+      width:100%;
+    }
+
+    .menu-bar ul{
+      display:inline-flex;
+      list-style:none;
+      padding:5px;
+      margin-left:-5px;
+    }
+
+    .menu-bar ul li{
+      width:180px;
+      margin:0px;
+      padding:15px;
+    }
+
+    .menu-bar ul li a{
+      text-decoration:none;
+      color:#000000;
+      padding:7px;
+      }
+      
+    .menu-bar ul li:hover{
+      background:#ffd700;
+      border-radius:3px;
+    }
+
+    .submenu1{
+      display:none;
+    }
+    
+    .menu-bar ul li:hover .submenu1{
+      display:block;
+      position:absolute;
+      background:#ffa500;
+      margin-top:15px;
+      margin-left:-15px;
+    }
+
+    .menu-bar ul li:hover .submenu1 ul{
+      display:block;
+      margin:5px;
+    }
+
+    .menu-bar ul li a:hover{
+      color:#000000;
+    }
+
+    .footer1{
+	background-color: #ffa500;
+	text-align: center;
+	height: 90px;
+	margin: -18px;
+	margin-right: 0;
+	margin-bottom: 0;
+    }
+
+    .footer1-text{
+        padding: 25px;
+    }
+  h1{
+        font-family:Georgia;
+      text-align:center;
+      margin: -2px;
+      background-color:#000000;
+      color:#ffa500;
+      padding:30px;
+      font-size: 40px;
+      letter-spacing: 2px;  
+    }

@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Query Form</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../CSS%20Files/stylesq.css"> <!--linking the CSS file-->
+
+</head>
+
+<body>
+<a href="homepage.html">
+  <img src="../Images/logo.jpg" alt="icon" style="float:left;" height="114" width="160">
+</a>
+  <p class=text2><b>Get Connected To Gather Cricket...</b></p>  <!-- title of the page-->
+
+<!--the navigation bar -->
+  <div class="menu-bar">  <!--Div tag to design and style the menu bar-->
+
+    <ul>    <!--start of the unorderd list containing items in the main menu bar-->
+            <!--list item under the unorderd list in the main menu bar -->
+      <li><a href="homepage.html">Home</a></li>
+
+      <li> <a href="productspage.html">Products</a> </li>
+
+      <li> <a href="https://www.espncricinfo.com/">News</a></li>
+
+      <li> <a href="Quiz.html">Attempt Quiz</a></li>
+
+      <li> <a href=gallery.html>Gallery</a></li>
+
+      <li> <a href="#">Cart</a></li>
+
+      <li> <a href="AuthorPage.html">About Us</a>
+        <div class="submenu1">      <!--class to handle submenu items-->
+          <ul>                      <!--start of the list containing items in the sub menu the main menu item "About us"-->
+            <li><a href="SVG.html">SVG</a></li>  
+            <li><a href="AuthorPage.html">Authors</a></li>      <!--Sub menu items for the main menu item "About us" -->
+            <li><a href="Query.html">Contact</a></li>       
+          </ul>                       <!--end of the list containing items in the main menu item "About us"-->
+        </div>
+      </li>
+    </ul>   <!--close of the unorderd list containing items in the main menu bar-->               
+  </div>
+
+  <!--end of the navigation bar-->
+  <!--start of the query form items-->
+
+  <div class="container">  <!--container created to hold the body of the page --> 
+
+    <form action="mailto:sathninduvidam@gmail.com" method="post"> <!--creating a form with action to send the form inputs via email-->
+
+        <h3><u>Query Form</u></h3>  <!--heading of the form--> 
+
+        <div id="nameid"> <!--div tag with id used for name to assignin to the funcion-->  
+          <p>
+            Name:        <!--Creating the name feild and its attributes-->
+            <input type="text" name="name" id="uname" size="30">
+          </p>
+        </div>
+      <br>
+        <div id="mailid">  <!--div tag with id used for address to assignin to the funcion-->   
+          <p>
+            Email:         <!--Crating the address feild and its attributes-->
+            <input type="text" name="mail" id="email" size="30">
+          </p>
+        </div>
+      <br>
+        <div>
+          <p>Select Subject:</p>  <!--div tag for the radio button selection and its attributes-->
+
+            <input type="radio" name="choice" id="radioid" value="choose"> 
+            <label>Local Delivery</label><br>           <!--radio button choice-->
+
+            <input type="radio" name="choice" id="choose" value="choose">
+            <label>International Shipping</label><br>   <!--radio button choice-->
+
+            <input type="radio" name="choice" id="choose" value="choose">
+            <label>Return items</label><br>             <!--radio button choice-->
+
+            <input type="radio" name="choice" id="choose" value="choose">
+            <label>Online Booking</label>               <!--radio button choice-->
+        </div>
+      <br>
+        <div id="discid">                <!--div tag with id used for name to assignin to the funcion-->
+            <label>Description:</label>  <!--Creating the text area for description and its attributes-->
+          <br>
+            <textarea name="Details" id="feedback" rows="10" cols="50"></textarea>
+          <br><br>
+            <input type="button" id="disp-btn" value="View Query" onclick="validateinputs(this.form)"> 
+                                                                    <!--call the function used to detect empty feild and display alert message-->
+                                                                    <!--the value assigned to the button name "View Query"-->
+        </div>
+      <br>     
+          <input type="reset" value="back" id="func-btn">  <!--back button to get the form back-->
+          <input type="submit" value="Send" id="func-btn">  <!--button to send mail-->     
+    </form>    
+        <img src="../Images/logo.jpg" alt="icon"           
+        width="380" height="380" style="float: right;">     <!--adding the only image of the page-->
+  </div>
+
+  <footer>
+  <div class="footer1">   <!--foother with link to the personal details page -->
+    <p class="footer1-text"><b>Last upadted:</b>20/07/2021
+    <br>
+    Page Editor:<a href=personal1.html>Vidam Sathnindu</a>
+    <br>
+    Copyright &copy; All rights reserved</p>
+    <br>
+  </div>
+  </footer>
+ 
+<script src="../JS Files/Query.js"></script> <!--linking the java script file-->
+
+</body>
+</html>

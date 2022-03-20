@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cricket Quiz</title>
+    <link rel="stylesheet" href="../CSS%20Files/Questions.css" >
+    <script src="../JS%20Files/Questions.js"></script>
+    <script>
+        window.addEventListener("load", renderQuestion, false);
+    </script>
+</head>
+
+<body>
+
+<div class="topic"> <!--div tag to handle the page heading creation-->
+    <a href="homepage.html">
+        <img src="../Images/logo.jpg" alt="icon" style="float:left;" height="114" width="160">
+    </a>
+    <h1 id="heading">MY CRICKET STORE 360<sup>o</sup></h1>	<!--Heading of the web page-->
+</div>  <!--end of the div tag with class topic-->
+
+<div class="menu-bar">	<!--Div tag to design and style the menu bar-->
+
+    <ul>		<!--start of the unorderd list containing items in the main menu bar-->
+        <!--list item under the unorderd list in the main menu bar -->
+        <li><a href="homepage.html"> Home </a></li>
+
+        <li> <a href="productspage.html">Products</a> </li>
+
+        <li> <a href="https://www.espncricinfo.com/">News</a></li>
+
+        <li> <a href="Quiz.html">Attempt Quiz</a></li>
+
+        <li> <a href="gallery.html">Gallery</a></li>
+
+        <li> <a href="#">Cart</a></li>
+
+        <li> <a href="AuthorPage.html">About Us</a>
+            <div class="submenu1">      <!--class to handle submenu items-->
+                <ul>  							<!--start of the list containing items in the sub menu the main menu item "About us"-->
+                    <li><a href="SVG.html">SVG</a></li>
+                    <li><a href="AuthorPage.html">Authors</a></li>		  <!--Sub menu items for the main menu item "About us" -->
+                    <li><a href="Query.html">Contact</a></li>
+                </ul>				            <!--end of the list containing items in the main menu item "About us"-->
+            </div>
+        </li>
+    </ul>		<!--close of the unorderd list containing items in the main menu bar-->
+</div>
+          <!-- Adding The Countdown Timer-->
+ <h3>~Timer~</h3>
+ <h3 id="quizTime"> 60 </h3><br>
+
+<div id = "result" class = "container result" style="display:none;">
+</div>
+
+<h2 id="test_status"> t</h2>
+<div id="test"></div>
+
+<footer>
+    Last Edited: 20.07.2021<br>
+    Page Editor: <a href="Student3info.html">Miuru Abeysiriwardana</a><br>
+    Copyright &copy; All Rights Reserved
+</footer>
+</body>
+</html>
